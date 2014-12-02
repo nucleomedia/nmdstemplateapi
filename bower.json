@@ -22,7 +22,9 @@
     "test",
     "tests",
 	"sample",
-	"src"
+	"src",
+	"package.json",
+	"gulpfile.js"
   ],
   "dependencies": {
     "angular": ">=1.0.x",
