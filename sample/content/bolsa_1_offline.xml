@@ -1,0 +1,13 @@
+﻿<bolsas>
+  <bolsa>
+    <dataAtualizacao>10/04/2014 10:45:39</dataAtualizacao>
+    <nome>IBovespa</nome>
+    <valorIndice>51.380,21</valorIndice>
+    <tipoVariacao>1</tipoVariacao>
+    <variacao>(0,38%)</variacao>
+    <fechamentoPrevio>51.185,40</fechamentoPrevio>
+    <abertura>51.185,40</abertura>
+    <variacaoDia>51.083,95 - 51.522,00</variacaoDia>
+    <variacao52Semanas>44.107,00 - 57.099,00</variacao52Semanas>
+  </bolsa>
+</bolsas>

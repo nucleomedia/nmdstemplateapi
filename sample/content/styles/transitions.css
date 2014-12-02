@@ -1,0 +1,65 @@
+body{
+            opacity: 1;
+        }
+	#imagem{
+        opacity: 0;
+       
+    }
+	#imagem.animation{
+        -webkit-transition: opacity 0.5s linear 1.5s;
+		opacity: 1;
+	}
+	#logo{
+       opacity: 1;
+       
+    }
+	#logo.animation{
+		-webkit-transition: opacity 1s linear;
+        opacity: 0;
+	}
+	#titulo{
+        opacity: 0;
+        left: 0;
+        
+    }
+	#titulo.animation{
+		-webkit-transition: left 1s linear, opacity 1s linear;
+        left: 0;
+        opacity: 1;
+	}
+	
+    #titulo-texto{
+        position: relative;
+        top:0.5em;
+        opacity: 0;
+        
+    }
+	#titulo-texto.animation{
+		-webkit-transition: top 1s linear 1s, opacity 1s linear 1s;
+        top:0em;
+        opacity: 1;
+	}
+	
+#conteudo{
+    opacity: 0;
+    left: 0;
+        
+}	
+	#conteudo.animation{
+		-webkit-transition: left 1s linear, opacity 1s linear;
+        left: 0;
+        opacity: 1;
+	}
+
+	#conteudo-texto{
+        position: relative;
+        top:0.5em;
+        opacity: 0;
+        
+    }
+	#conteudo-texto.animation{
+		-webkit-transition: top 1s linear 1s, opacity 1s linear 1s;
+        top:0em;
+        opacity: 1;
+    }
+

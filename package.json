@@ -1,0 +1,27 @@
+{
+  "name": "nmdstemplateapi",
+  "version": "0.1.0",
+  "description": "Api, documentação e exemplos de uso da API para templates do NucleoMeadia Digital Signage",
+  "main": "",
+  "dependencies": {
+    "gulp-uglify": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-bookmarkify": "^0.1.1",
+    "gulp-zip": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://duartepatriani@github.com/duartepatriani/nmdstemplateapi.git"
+  },
+  "author": "Luiz Patriani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duartepatriani/nmdstemplateapi/issues"
+  },
+  "homepage": "https://github.com/duartepatriani/nmdstemplateapi"
+}

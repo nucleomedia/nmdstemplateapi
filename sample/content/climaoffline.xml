@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<climas>
+  <clima>
+    <hoje>
+      <umdMax/>
+      <umdMin/>
+      <cidade><![CDATA[São Paulo-SP]]></cidade>
+      <data>09/04/2014</data>
+      <min>19 </min>
+      <max>31 </max>
+      <preciptacao>5  mm</preciptacao>
+      <manha>4</manha>
+      <tarde>4</tarde>
+      <noite>4</noite>
+      <descricao>Sol, alternando com pancadas de chuva e possíveis trovoadas</descricao>
+    </hoje>
+    <amanha>
+      <umdMax/>
+      <umdMin/>
+      <cidade><![CDATA[São Paulo-SP]]></cidade>
+      <data>10/04/2014</data>
+      <min>20 </min>
+      <max>31 </max>
+      <preciptacao>2  mm</preciptacao>
+      <manha>2</manha>
+      <tarde>2</tarde>
+      <noite>2</noite>
+      <descricao>Sol, alternando com chuva em forma de pancada rápida e isolada</descricao>
+    </amanha>
+    <terceirodia>
+      <umdMax/>
+      <umdMin/>
+      <cidade><![CDATA[São Paulo-SP]]></cidade>
+      <data>11/04/2014</data>
+      <min>20 </min>
+      <max>31 </max>
+      <preciptacao>0  mm</preciptacao>
+      <manha>2</manha>
+      <tarde>2</tarde>
+      <noite>2</noite>
+      <descricao>Predomínio de sol, apenas com pouca variação de nuvens</descricao>
+    </terceirodia>
+    <quartodia>
+      <umdMax/>
+      <umdMin/>
+      <cidade><![CDATA[São Paulo-SP]]></cidade>
+      <data>12/04/2014</data>
+      <min>21 </min>
+      <max>31 </max>
+      <preciptacao>2  mm</preciptacao>
+      <manha>4</manha>
+      <tarde>4</tarde>
+      <noite>4</noite>
+      <descricao>Sol, alternando com pancadas de chuva e possíveis trovoadas</descricao>
+    </quartodia>
+  </clima>
+</climas>

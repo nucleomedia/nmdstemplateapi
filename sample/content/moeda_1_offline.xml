@@ -1,0 +1,9 @@
+﻿<moedas intIdTerminal="995" total="1">
+  <moeda>
+    <dataAtualizacao>4/10/2014 9:43:52 AM</dataAtualizacao>
+    <codigo>1</codigo>
+    <nome>Dólar</nome>
+    <valor>R$ 2,19</valor>
+    <variacao>0,55258222</variacao>
+  </moeda>
+</moedas>

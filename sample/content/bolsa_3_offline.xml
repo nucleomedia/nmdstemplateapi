@@ -1,0 +1,13 @@
+﻿<bolsas>
+  <bolsa>
+    <dataAtualizacao>10/04/2014 10:45:44</dataAtualizacao>
+    <nome>Dow Jones</nome>
+    <valorIndice>16.451,47</valorIndice>
+    <tipoVariacao>1</tipoVariacao>
+    <variacao>(0,09%)</variacao>
+    <fechamentoPrevio>16.437,18</fechamentoPrevio>
+    <abertura>16.437,24</abertura>
+    <variacaoDia>16.413,87 - 16.456,12</variacaoDia>
+    <variacao52Semanas>14.444,00 - 16.631,60</variacao52Semanas>
+  </bolsa>
+</bolsas>

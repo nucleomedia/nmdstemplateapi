@@ -1,0 +1,63 @@
+body{
+            opacity: 1;
+        }
+	#imagem{
+        opacity: 0;
+       
+    }
+	#imagem.animation{
+       
+		opacity: 1;
+	}
+	#logo{
+       opacity: 1;       
+    }
+	#logo.animation{ 
+        opacity: 0;
+	}
+	#titulo{
+        opacity: 0;
+        left: 0;
+        
+    }
+	#titulo.animation{
+		
+        left: 0;
+        opacity: 1;
+	}
+	
+    #titulo-texto{
+        position: relative;
+        top:0.5em;
+        opacity: 0;
+        
+    }
+	#titulo-texto.animation{
+		
+        top:0em;
+        opacity: 1;
+	}
+	
+#conteudo{
+    opacity: 0;
+    left: 0;
+        
+}	
+	#conteudo.animation{
+		
+        left: 0;
+        opacity: 1;
+	}
+
+	#conteudo-texto{
+        position: relative;
+        top:0.5em;
+        opacity: 0;
+        
+    }
+	#conteudo-texto.animation{
+		
+        top:0em;
+        opacity: 1;
+    }
+

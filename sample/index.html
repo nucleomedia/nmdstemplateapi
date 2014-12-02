@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>NucleoMedia-DS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+    
+    <style>
+	html, body {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		font-family: sans-serif;		
+		font-size: 12px;
+		background-color: #000;
+        background-image: url(content/images/background.png);
+        background-position: center center;
+        background-repeat: repeat;
+		
+
+	}
+        body{
+            opacity: 0;
+        }
+	#imagem {
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		
+		overflow: hidden;
+	}
+    #logo {
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		width:100%;
+		height: 100%;
+		position: absolute;
+		bottom: 0;
+        top: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+		background-image: url(content/images/logo.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	#titulo {
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		position: absolute;
+		
+		bottom: 5em;
+		width: 100%;
+		height: 2em;
+		line-height: 2em;
+		color: #FFFFFF;
+		background-color: #e77a26;
+		-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+        z-index: 1;
+		
+	}
+	#titulo-texto{
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		margin-left: 1.1em;
+		
+    }
+	#conteudo {
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		position: absolute;
+		
+		bottom: 0;
+		width: 100%;
+		height: 5em;
+		
+		color: #fff;
+		background-color: rgba(0,0,0,0.8);
+		
+	}
+	#conteudo-texto{
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-perspective: 1000;
+		font-size: 1.3em;
+		margin-left: 0.8em;
+		margin-top: 0.2em;
+	}
+
+	</style>
+	
+</head>
+
+<body ng-app="nucleomediaApi" ng-controller="feedCtrl">
+    <div id="logo">
+	</div>
+	<img id="imagem" ng-src="{{feed.chaVideo}}" alt="">
+	
+	<div id="titulo">
+		<div id="titulo-texto">{{feed.ChaAux2}}</div>
+	</div>
+	<div id="conteudo">
+		<div id="conteudo-texto">{{feed.chaTitulo}}</div>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/flowtype/flowtype.js"></script>
+	<script> 
+        function isAndroid2_3(){
+            var ua = navigator.userAgent;
+            if( ua.toLowerCase().indexOf("android 2") >= 0 )
+            {
+                return true;
+            }
+            return false;
+        }
+	</script>
+    <script>
+        var feedConfig = {
+                isDeveloper: true,
+                isAleatorio: false,
+                isAnimate : true
+        };
+        
+        var fileref = document.createElement("link");
+        fileref.setAttribute("rel", "stylesheet");
+        fileref.setAttribute("type", "text/css");
+        
+        if(!feedConfig.isAnimate){
+            fileref.setAttribute("href", 'content/styles/static.css');
+        }else if(isAndroid2_3()){
+             fileref.setAttribute("href", 'content/styles/transitions.css');
+        }else{
+            fileref.setAttribute("href", 'content/styles/animations.css');
+        }
+        
+        document.getElementsByTagName("head")[0].appendChild(fileref);
+            
+        window.play = function () {
+            var b = setTimeout(function(){
+                    $("#logo").addClass("animation");
+                    $("#titulo").addClass("animation");
+                    $("#conteudo").addClass("animation");
+                    $("#titulo-texto").addClass("animation");
+                    $("#conteudo-texto").addClass("animation");
+                    $("#imagem").addClass("animation");
+            },1000);	
+        }
+        if(feedConfig.isDeveloper){
+            play();
+        }
+        
+        $('body').flowtype({
+            fontRatio: 50,
+            lineRatio: 1.5
+        });       
+        
+    </script>
+	
+	<script src="lib/xml2json.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/nucleomediaApi.js"></script>
+    <script src="lib/nucleomediaFeed.js"></script>
+</body>
+</html>

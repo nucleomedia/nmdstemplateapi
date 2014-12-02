@@ -1,0 +1,13 @@
+﻿<bolsas>
+  <bolsa>
+    <dataAtualizacao>10/04/2014 10:45:49</dataAtualizacao>
+    <nome>IBEX 35</nome>
+    <valorIndice>10.397,60</valorIndice>
+    <tipoVariacao>0</tipoVariacao>
+    <variacao>(0,84%)</variacao>
+    <fechamentoPrevio>10.485,20</fechamentoPrevio>
+    <abertura>10.523,70</abertura>
+    <variacaoDia>10.332,20 - 10.536,60</variacaoDia>
+    <variacao52Semanas>7.508,40 - 10.705,10</variacao52Semanas>
+  </bolsa>
+</bolsas>

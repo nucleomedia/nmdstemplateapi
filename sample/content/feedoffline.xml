@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<lista intIdTerminal='0' total='60'>
+  <item>
+    <IntIdFeed>5269</IntIdFeed>
+    <intIdItem>382370764</intIdItem>
+    <ChaTituloFeed>TituloFeed 1</ChaTituloFeed>
+    <chaTitulo>Titulo 1</chaTitulo>
+    <chaLink>Link 1</chaLink>
+    <chaDescricao><![CDATA[Descricao 1]]></chaDescricao>
+    <ChaDescricaoFeed><![CDATA[feeddownload:item/texto/legenda/textocurtoo/arquivo/editoria/142/700]]></ChaDescricaoFeed>
+    <chaConteudo><![CDATA[Procurador-geral da República, Janot diz que há fortes indícios de propina em licitações do Metrô de SP]]></chaConteudo>
+    <ChaCopyright><![CDATA[terra]]></ChaCopyright>
+    <ChaAux1><![CDATA[Agência Brasil]]></ChaAux1>
+    <ChaAux2><![CDATA[Política]]></ChaAux2>
+    <ChaAux3><![CDATA[]]></ChaAux3>
+    <ChaAux4><![CDATA[]]></ChaAux4>
+    <ChaAux5><![CDATA[]]></ChaAux5>
+    <DatAlteracao><![CDATA[02/04/2014 00:58:49]]></DatAlteracao>
+    <chaFlash><![CDATA[]]></chaFlash>
+    <chaVideo><![CDATA[content/images/1.jpg]]></chaVideo>
+    <chaImagens>
+      <imagem><![CDATA[content/images/1.jpg]]></imagem>
+    </chaImagens>
+  </item>
+  <item>
+    <IntIdFeed>5269</IntIdFeed>
+    <intIdItem>382370763</intIdItem>
+    <ChaTituloFeed>Terra Política_Vertical</ChaTituloFeed>
+    <chaTitulo>Politica 2</chaTitulo>
+    <chaLink></chaLink>
+    <chaDescricao><![CDATA[descricao]]></chaDescricao>
+    <ChaDescricaoFeed><![CDATA[feeddownload:item/texto/legenda/textocurtoo/arquivo/editoria/142/700]]></ChaDescricaoFeed>
+    <chaConteudo><![CDATA[Para filha, ex-deputado Rubens Paiva foi o protótipo do caso Amarildo, morto durante abordagem de PMs no Rio]]></chaConteudo>
+    <ChaCopyright><![CDATA[terra]]></ChaCopyright>
+    <ChaAux1><![CDATA[]]></ChaAux1>
+    <ChaAux2><![CDATA[Política 2]]></ChaAux2>
+    <ChaAux3><![CDATA[]]></ChaAux3>
+    <ChaAux4><![CDATA[]]></ChaAux4>
+    <ChaAux5><![CDATA[]]></ChaAux5>
+    <DatAlteracao><![CDATA[02/04/2014 00:58:42]]></DatAlteracao>
+    <chaFlash><![CDATA[]]></chaFlash>
+    <chaVideo><![CDATA[content/images/1.jpg]]></chaVideo>
+    <chaImagens>
+      <imagem><![CDATA[content/images/1.jpg]]></imagem>
+      <imagem><![CDATA[content/images/1.jpg]]></imagem>
+    </chaImagens>
+  </item>
+  <item>
+    <IntIdFeed>3850</IntIdFeed>
+    <intIdItem>382370167</intIdItem>
+    <ChaTituloFeed>Terra Política</ChaTituloFeed>
+    <chaTitulo>Politica 3</chaTitulo>
+    <chaLink></chaLink>
+    <chaDescricao><![CDATA[descricao]]></chaDescricao>
+    <ChaDescricaoFeed><![CDATA[feeddownload:item/texto/legenda/textopuro/arquivo/editoria/142/700]]></ChaDescricaoFeed>
+    <chaConteudo><![CDATA[Justiça autoriza que João Paulo Cunha deixe presídio para trabalhar; ex-deputado foi condenado pelo mensalão]]></chaConteudo>
+    <ChaCopyright><![CDATA[terra]]></ChaCopyright>
+    <ChaAux1><![CDATA[]]></ChaAux1>
+    <ChaAux2><![CDATA[Política 3]]></ChaAux2>
+    <ChaAux3><![CDATA[]]></ChaAux3>
+    <ChaAux4><![CDATA[]]></ChaAux4>
+    <ChaAux5><![CDATA[]]></ChaAux5>
+    <DatAlteracao><![CDATA[01/04/2014 23:49:52]]></DatAlteracao>
+    <chaFlash><![CDATA[]]></chaFlash>
+    <chaVideo><![CDATA[content/images/1.jpg]]></chaVideo>
+    <chaImagens></chaImagens>
+  </item>								
+</lista>

@@ -1,0 +1,13 @@
+﻿<bolsas>
+  <bolsa>
+    <dataAtualizacao>10/04/2014 10:45:51</dataAtualizacao>
+    <nome>NIKKEI 225</nome>
+    <valorIndice>14.300,12</valorIndice>
+    <tipoVariacao>1</tipoVariacao>
+    <variacao>(0,00%)</variacao>
+    <fechamentoPrevio>14.299,69</fechamentoPrevio>
+    <abertura>14.484,54</abertura>
+    <variacaoDia>14.234,45 - 14.513,14</variacaoDia>
+    <variacao52Semanas>12.415,80 - 16.320,20</variacao52Semanas>
+  </bolsa>
+</bolsas>

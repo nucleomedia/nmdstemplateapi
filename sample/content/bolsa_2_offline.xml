@@ -1,0 +1,13 @@
+﻿<bolsas>
+  <bolsa>
+    <dataAtualizacao>10/04/2014 10:45:42</dataAtualizacao>
+    <nome>Nasdaq</nome>
+    <valorIndice>4.168,03</valorIndice>
+    <tipoVariacao>0</tipoVariacao>
+    <variacao>(0,38%)</variacao>
+    <fechamentoPrevio>4.183,90</fechamentoPrevio>
+    <abertura>4.181,21</abertura>
+    <variacaoDia>4.167,87 - 4.182,61</variacaoDia>
+    <variacao52Semanas>3.154,96 - 4.371,71</variacao52Semanas>
+  </bolsa>
+</bolsas>
