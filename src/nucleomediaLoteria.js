@@ -6,16 +6,14 @@ nucleomediaApi.controller('loteriaCtrl', ['$scope', 'nucleomediaRequest', functi
         if (loteriaConfig.isDeveloper) {
             url = "content/loteria_offline.xml?cachebuster=" + RandomNumber();
         }
-        nucleomediaRequest.get(url, carregarComplete);
+        nucleomediaRequest.get(url, function(result){
+            NormalizaJson(result.loterias);
+
+            rootScope.loterias = result.loterias;
+            
+            console.log(rootScope.loterias)
+        });
     };
     rootScope.carregarLoteria();
 
-    function carregarComplete(result) {
-		
-        NormalizaJson(result.loterias);
-
-		rootScope.loterias = result.loterias;
-		
-        console.log(rootScope.loterias)
-    }
 }]);
