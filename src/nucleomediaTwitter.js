@@ -11,7 +11,7 @@ nucleomediaApi.controller('twitterCtrl', ['$scope', 'nucleomediaRequest', functi
     rootScope.carregarTwitter();
 
     function carregarTwitterComplete(result) {
-		debugger
+		
         var itens = result.tweets.status;
         
         NormalizaJson(itens);
