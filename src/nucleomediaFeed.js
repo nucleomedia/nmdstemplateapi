@@ -13,24 +13,33 @@ nucleomediaApi.controller('feedCtrl', ['$scope', 'nucleomediaRequest', function 
 
     function carregarFeedComplete(result) {
         var itens = result.lista.item;
+        rootScope.feeds = [];
         var item;
-        if (itens instanceof Array) {
+
+        for (var i = itens.length - 1; i >= 0; i--) {
+            var itemParaTratar = itens[i];
+            
+            NormalizaJson(itemParaTratar);
+       
+            itemParaTratar = trasformaLinkRelativoEmAbsoluto(itemParaTratar);
+
+            rootScope.feeds.push(itemParaTratar);
+        };
+
+        if (rootScope.feeds instanceof Array) {
             if (feedConfig.isAleatorio) {
-                item = CarregaAleatoriamente(itens);
+                item = CarregaAleatoriamente(rootScope.feeds);
             } else {
-                item = CarregaSequencialmente(itens, "feed");
+                item = CarregaSequencialmente(rootScope.feeds, "feed");
             }
         } else {
-            item = itens;
+            item = rootScope.feeds;
         }
-
-        NormalizaJson(item);
-       
-        item = trasformaLinkRelativoEmAbsoluto(item);
 
         rootScope.feed = item;
 
         console.log(rootScope.feed)
+        console.log(rootScope.feeds)
     }
 
     function trasformaLinkRelativoEmAbsoluto(item) {

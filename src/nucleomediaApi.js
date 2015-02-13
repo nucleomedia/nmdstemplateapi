@@ -14,9 +14,10 @@ function RecuperaCodigo() {
 RecuperaCodigo();
 
 function NormalizaJson(obj) {
+    
     for (var prop in obj) {
         if (obj[prop] instanceof Object) {
-            if (obj[prop].__cdata) {
+            if (obj[prop].__cdata || obj[prop].__cdata == "") {
                 obj[prop] = obj[prop].toString();
             } else {
                 NormalizaJson(obj[prop]);
@@ -46,20 +47,20 @@ function CarregaSequencialmente(array, prefixo) {
 
 function relativeLinkToAbsolute(obj) {
     var url = ""
-	console.log(obj);
-	if (window.location.toString().indexOf('http://') <= -1) {
-		url = window.location.toString();
-		var textoCorte = "/arquivos/";
-		var sizeCorte = textoCorte.length;
-		var corte = url.indexOf(textoCorte);
-		url = url.substring(0, corte);
-		console.log(url);
-	}
-	
-	if (obj && obj.toString() != '') {
+    console.log(obj);
+    if (window.location.toString().indexOf('http://') <= -1) {
+        url = window.location.toString();
+        var textoCorte = "/arquivos/";
+        var sizeCorte = textoCorte.length;
+        var corte = url.indexOf(textoCorte);
+        url = url.substring(0, corte);
+        console.log(url);
+    }
+    
+    if (obj && obj.toString() != '') {
          var retorno = url + obj;
-		 console.log(retorno);
-		 return retorno;
+         console.log(retorno);
+         return retorno;
     }
 }
 
