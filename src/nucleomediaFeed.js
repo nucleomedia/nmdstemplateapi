@@ -12,7 +12,14 @@ nucleomediaApi.controller('feedCtrl', ['$scope', 'nucleomediaRequest', function 
     rootScope.carregarFeed();
 
     function carregarFeedComplete(result) {
-        var itens = result.lista.item;
+		
+        var itens = [];
+		
+		if (result.lista.item instanceof Array) {
+			itens = result.lista.item;
+		} else {
+			itens.push(result.lista.item)
+		}
         rootScope.feeds = [];
         var item;
 
@@ -38,8 +45,8 @@ nucleomediaApi.controller('feedCtrl', ['$scope', 'nucleomediaRequest', function 
 
         rootScope.feed = item;
 
-        console.log(rootScope.feed)
-        console.log(rootScope.feeds)
+        console.log("Feed:" + rootScope.feed)
+        console.log("Feeds: " + rootScope.feeds)
     }
 
     function trasformaLinkRelativoEmAbsoluto(item) {
