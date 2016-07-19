@@ -1,4 +1,6 @@
-nucleomediaApi.controller('feedCtrl', ['$scope', 'nucleomediaRequest', function ($scope, nucleomediaRequest) {
+nucleomediaApi
+.filter('smartLimit', smartLimit)
+.controller('feedCtrl', ['$scope', 'nucleomediaRequest', function ($scope, nucleomediaRequest) {
     var rootScope = $scope.$root;
     var isAleatorio = false;
 
@@ -67,3 +69,25 @@ nucleomediaApi.controller('feedCtrl', ['$scope', 'nucleomediaRequest', function 
     }
   
 }]);
+
+function smartLimit(){
+		return function (value, maxCharacters) {
+			
+			if(!angular.isString(value))
+				return;
+			if(value.length <= maxCharacters)
+				return value;
+				
+			var full = value.split(' ');
+			var finalText = full[0];
+				for(var i = 1; i< full.length; i++){
+					var tmp = finalText.concat(' ', full[i]);
+					if(tmp.length >maxCharacters)
+						break;
+					finalText = tmp;
+				}
+				return finalText;
+				
+			
+		};
+}
