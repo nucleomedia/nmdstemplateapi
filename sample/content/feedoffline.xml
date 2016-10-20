@@ -17,12 +17,13 @@
     <ChaAux5><![CDATA[]]></ChaAux5>
     <DatAlteracao><![CDATA[02/04/2014 00:58:49]]></DatAlteracao>
     <chaFlash><![CDATA[]]></chaFlash>
-    <chaVideo><![CDATA[content/images/1.jpg]]></chaVideo>
+    <chaVideo><![CDATA[]]></chaVideo>
     <chaImagens>
       <imagem><![CDATA[content/images/1.jpg]]></imagem>
+      <imagem><![CDATA[content/images/2.jpg]]></imagem>
     </chaImagens>
   </item>
-  <item>
+  <!--<item>
     <IntIdFeed>5269</IntIdFeed>
     <intIdItem>382370763</intIdItem>
     <ChaTituloFeed>Terra Política_Vertical</ChaTituloFeed>
@@ -64,5 +65,5 @@
     <chaFlash><![CDATA[]]></chaFlash>
     <chaVideo><![CDATA[content/images/1.jpg]]></chaVideo>
     <chaImagens></chaImagens>
-  </item>								
+  </item>								-->
 </lista>

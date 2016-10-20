@@ -14,7 +14,7 @@ function RecuperaCodigo() {
 RecuperaCodigo();
 
 function NormalizaJson(obj) {
-    
+
     for (var prop in obj) {
         if (obj[prop] instanceof Object) {
             if (obj[prop].__cdata || obj[prop].__cdata == "") {
@@ -28,7 +28,12 @@ function NormalizaJson(obj) {
 
 function CarregaAleatoriamente(array) {
     var itemRnd = randomIndex = Math.floor(Math.random() * array.length);
-    return array[itemRnd];
+
+    var retorno = array[itemRnd];
+
+    defineTipoDoItem(retorno);
+
+    return retorno;
 }
 
 function CarregaSequencialmente(array, prefixo) {
@@ -41,8 +46,22 @@ function CarregaSequencialmente(array, prefixo) {
     posicaoItem++;
     window.localStorage.setItem(prefixo + codigo, posicaoItem);
 
+    defineTipoDoItem(retorno);
+
+    console.log(retorno);
 
     return retorno;
+}
+
+function defineTipoDoItem(item) {
+    item.tipo = "texto";
+    if (item.chaVideo) {
+        item.tipo = item.chaVideo.indexOf('.mp4') >= 0 ? "video" : "imagem"
+    } else {
+        if (item.chaImagens) {
+            item.tipo = "imagem";
+        }
+    }
 }
 
 function relativeLinkToAbsolute(obj) {
@@ -56,11 +75,11 @@ function relativeLinkToAbsolute(obj) {
         url = url.substring(0, corte);
         console.log(url);
     }
-    
+
     if (obj && obj.toString() != '') {
-         var retorno = url + obj;
-         console.log(retorno);
-         return retorno;
+        var retorno = url + obj;
+        console.log(retorno);
+        return retorno;
     }
 }
 
@@ -70,7 +89,7 @@ function RandomNumber() {
 
 nucleomediaApi.factory('nucleomediaRequest', ['$http', function ($http) {
     return {
-        get: function (url,callback) {
+        get: function (url, callback) {
             $http.get(
                 url,
                 {
@@ -81,9 +100,19 @@ nucleomediaApi.factory('nucleomediaRequest', ['$http', function ($http) {
                     }
                 }
             ).
-            success(function (data, status) {
-                callback(data);
-            })
+                success(function (data, status) {
+                    callback(data);
+                })
         }
     }
 }]);
+
+
+
+angular.module('nucleomediaApi')
+    .filter('trustUrl', ['$sce', function ($sce) {
+        return function (url) {
+            console.log(url)
+            return $sce.trustAsResourceUrl(url);
+        };
+    }]);

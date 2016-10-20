@@ -113,7 +113,8 @@
 <body ng-app="nucleomediaApi" ng-controller="feedCtrl">
     <div id="logo">
 	</div>
-	<img id="imagem" ng-src="{{feed.chaVideo}}" alt="">
+	<img ng-if="feed.tipo == 'imagem'" id="imagem" ng-src="{{feed.chaVideo}}" alt="">
+	<video ng-if="feed.tipo == 'video'" id="imagem" autoplay ng-src="{{feed.chaVideo | trustUrl}}"></video>
 	
 	<div id="titulo">
 		<div id="titulo-texto">{{feed.ChaAux2}}</div>
