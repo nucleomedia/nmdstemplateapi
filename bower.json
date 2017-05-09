@@ -1,33 +1,33 @@
 {
-  "name": "nmdstemplateapi",
-  "version": "0.2.0",
-  "homepage": "https://github.com/duartepatriani/nmdstemplateapi",
-  "authors": [
-    "Luiz Patriani <luiz@speedysolutions.com.br>"
-  ],
-  "description": "Api, documentação e exemplos de uso da API para templates do NucleoMeadia Digital Signage",
-  "main": "dest/nucleomediaApi.js",
-  "keywords": [
-    "nucleomedia",
-    "nm",
-    "ds",
-    "digital",
-    "signage"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
-	"sample",
-	"src",
-	"package.json",
-	"gulpfile.js"
-  ],
-  "dependencies": {
-    "angular": ">=1.0.x",
-    "x2js": "~1.1.7"
-  }
+    "name": "nmdstemplateapi",
+    "version": "0.3.0",
+    "homepage": "https://github.com/duartepatriani/nmdstemplateapi",
+    "authors": [
+        "Luiz Patriani <luiz@speedysolutions.com.br>"
+    ],
+    "description": "Api, documentação e exemplos de uso da API para templates do NucleoMeadia Digital Signage",
+    "main": "dest/nucleomediaApi.js",
+    "keywords": [
+        "nucleomedia",
+        "nm",
+        "ds",
+        "digital",
+        "signage"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests",
+        "sample",
+        "src",
+        "package.json",
+        "gulpfile.js"
+    ],
+    "dependencies": {
+        "angular": ">=1.0.x",
+        "x2js": "~1.1.7"
+    }
 }
