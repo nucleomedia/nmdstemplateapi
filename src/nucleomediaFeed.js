@@ -1,10 +1,10 @@
 nucleomediaApi
     .filter('smartLimit', smartLimit)
-    .controller('feedCtrl', ['$scope', 'nucleomediaRequest', function ($scope, nucleomediaRequest) {
+    .controller('feedCtrl', ['$scope', 'nucleomediaRequest', function($scope, nucleomediaRequest) {
         var rootScope = $scope.$root;
         var isAleatorio = false;
 
-        rootScope.carregarFeed = function () {
+        rootScope.carregarFeed = function() {
             var url = "http://localhost:8080/getNoticias?0&" + codigo + "&cachebuster=" + RandomNumber();
             if (feedConfig.isDeveloper) {
                 url = "content/feedoffline.xml?&cachebuster=" + RandomNumber();
@@ -55,6 +55,7 @@ nucleomediaApi
             item.chaFlash = relativeLinkToAbsolute(item.chaFlash);
 
             item.chaVideo = relativeLinkToAbsolute(item.chaVideo);
+            item.chaLogoFeed = relativeLinkToAbsolute(item.chaLogoFeed);
 
             if (item.chaImagens.imagem) {
                 if (item.chaImagens.imagem instanceof Array) {
@@ -72,7 +73,7 @@ nucleomediaApi
 
 
 function smartLimit() {
-    return function (value, maxCharacters) {
+    return function(value, maxCharacters) {
 
         if (!angular.isString(value))
             return;
