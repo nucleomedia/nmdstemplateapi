@@ -100,8 +100,8 @@ nucleomediaApi.factory('nucleomediaRequest', ['$http', function ($http) {
                     }
                 }
             ).
-                success(function (data, status) {
-                    callback(data);
+                then(function (result, status) {
+                    callback(result.data);
                 })
         }
     }
